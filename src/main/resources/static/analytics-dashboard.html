@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GitHub plugin for Gerrit Code Review - Analytics Dashboard Setup</title>
+</head>
+<body>
+<!--div.container start -->
+<div class="container">
+    Here we are!
+    <div class="center">
+        <form id="analytics-dashboard" action="analytics-dashboard-setup.gh" method="get">
+            <div id="analytics-parameters">
+                <ul class="parameters">
+                    <li>
+                        Repositories prefix:<br>
+                        <input type="text" id="reposPrefix" name="reposPrefix">
+
+                    </li>
+
+                </ul>
+            </div>
+            <button type="submit" id="submit">
+                <span class="button green"><span>Configure Analytics</span></span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='js/analyticswizard.js'></script>
+<!--div.container end -->
+</body>
+</html>
