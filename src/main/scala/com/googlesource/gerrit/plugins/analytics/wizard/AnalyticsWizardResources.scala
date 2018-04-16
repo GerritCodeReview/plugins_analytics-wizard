@@ -1,0 +1,66 @@
+// Copyright (C) 2017 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+package com.googlesource.gerrit.plugins.analytics.wizard
+
+import java.io.PrintWriter
+
+import com.google.gerrit.extensions.restapi.{
+  Response,
+  RestModifyView,
+  RestReadView
+}
+import com.google.gerrit.server.project.ProjectResource
+import com.google.inject.Inject
+import org.slf4j.LoggerFactory
+
+import scala.io.Source
+
+class GetAnalyticsStack @Inject()() extends RestReadView[ProjectResource] {
+  val log = LoggerFactory.getLogger(classOf[GetAnalyticsStack])
+  override def apply(
+      resource: ProjectResource): Response[AnalyticDashboardSetup] = {
+
+    val projectName = resource.getControl.getProject.getName
+
+    Response.ok(
+      AnalyticDashboardSetup(
+        projectName,
+        Source
+          .fromFile(s"/tmp/docker-compose.${projectName}.yaml")
+          .getLines
+          .mkString))
+
+  }
+}
+
+class Input(var dashboardName: String)
+
+class PutAnalyticsStack @Inject()()
+    extends RestModifyView[ProjectResource, Input] {
+  val log = LoggerFactory.getLogger(classOf[GetAnalyticsStack])
+  override def apply(resource: ProjectResource,
+                     input: Input): Response[String] = {
+
+    val projectName = resource.getControl.getProject.getName
+
+    log.error(s"===> Input: ${input.dashboardName}")
+    //TODO: dont' push to tmp
+    val p = new PrintWriter(s"/tmp/docker-compose.${projectName}.yaml")
+    p.write(AnalyticDashboardSetup.dockerComposeTemplate(projectName))
+    p.close
+
+    Response.created(s"Dashboard configuration created for $projectName!")
+
+  }
+}
