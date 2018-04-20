@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GitHub plugin for Gerrit Code Review - Analytics Dashboard Setup</title>
+
+    <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/analyticswizard.js'></script>
+</head>
+<body>
+<!--div.container start -->
+<div class="container">
+    <div class="center">
+        Project name: <input id="input-project-name" type="text">
+        <input type="button" value="Show dashboard config" onClick="showConfigDetails()"/>
+    </div>
+    <div id="config-section" hidden>
+            <div id="project-name">Project: </div>
+            <div id="config-file">Config file: </div>
+        </ul>
+    </div>
+</div>
+
+<!--div.container end -->
+</body>
+</html>
