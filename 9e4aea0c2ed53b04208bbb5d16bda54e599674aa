@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c12df5de_65b50d44",
+        "filename": "src/test/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticDashboardSetupSpec.scala",
+        "patchSetId": 14
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-04-20T09:34:36Z",
+      "side": 1,
+      "message": "Option[String] \u003d None",
+      "range": {
+        "startLine": 9,
+        "startChar": 21,
+        "endLine": 9,
+        "endChar": 34
+      },
+      "revId": "9e4aea0c2ed53b04208bbb5d16bda54e599674aa",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0e0d3341_901d6b2d",
+        "filename": "src/test/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticDashboardSetupSpec.scala",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-04-20T09:34:36Z",
+      "side": 1,
+      "message": "assert? I believe you should use the matchers with ScalaTest\n\nthis would be then:\n\n  gotFilename should contain(ads.configFileName)",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "9e4aea0c2ed53b04208bbb5d16bda54e599674aa",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
