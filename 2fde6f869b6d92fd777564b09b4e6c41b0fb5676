@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "71ff1897_3dcf18fa",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/HttpModule.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-04-25T15:03:11Z",
+      "side": 1,
+      "message": "Missing license",
+      "revId": "2fde6f869b6d92fd777564b09b4e6c41b0fb5676",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
