@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e606ee05_895f88d1",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/HttpModule.scala",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2018-04-26T03:16:33Z",
+      "side": 1,
+      "message": "2018",
+      "range": {
+        "startLine": 1,
+        "startChar": 17,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "2764567187f7ed21774183a73ddf3d42ea885894",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7c11518_4a3c0df1",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/XAuthFilter.scala",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2018-04-26T03:16:33Z",
+      "side": 1,
+      "message": "2018",
+      "range": {
+        "startLine": 1,
+        "startChar": 17,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "2764567187f7ed21774183a73ddf3d42ea885894",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
