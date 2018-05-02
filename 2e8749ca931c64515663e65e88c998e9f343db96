@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7d65c02f_1dffbcfd",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "Why not including this as well in our plugin? You\u0027re doing it for jquery after all ;-)",
+      "range": {
+        "startLine": 7,
+        "startChar": 33,
+        "endLine": 7,
+        "endChar": 85
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f35f019_93e88f65",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "Gerrit could be mapped outside in a relative path: example mycompany.com/gerrit/...\n\nWould this still work?",
+      "range": {
+        "startLine": 5,
+        "startChar": 13,
+        "endLine": 5,
+        "endChar": 14
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57c78400_13687912",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "same as above: what if Gerrit is not on the root path?",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 19
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28cb801b_866da1b8",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "Leftover?",
+      "range": {
+        "startLine": 23,
+        "startChar": 18,
+        "endLine": 23,
+        "endChar": 64
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93de72da_418a0b1c",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "Inconsistent indenting: use spaces as before.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 4
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2fc996a_1396ed7e",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-02T21:19:39Z",
+      "side": 1,
+      "message": "leftover?",
+      "range": {
+        "startLine": 52,
+        "startChar": 5,
+        "endLine": 52,
+        "endChar": 56
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
