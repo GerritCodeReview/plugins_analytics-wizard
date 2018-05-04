@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2dbc5d31_4e9a73c6",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d65c02f_1dffbcfd",
+      "range": {
+        "startLine": 7,
+        "startChar": 33,
+        "endLine": 7,
+        "endChar": 85
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0f35f019_93e88f65",
         "filename": "src/main/resources/static/js/analyticswizard.js",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2018-05-02T21:19:39Z",
       "side": 1,
       "message": "Gerrit could be mapped outside in a relative path: example mycompany.com/gerrit/...\n\nWould this still work?",
+      "range": {
+        "startLine": 5,
+        "startChar": 13,
+        "endLine": 5,
+        "endChar": 14
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38be0a0a_33b26591",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "Make sense, follow up in another task",
+      "parentUuid": "0f35f019_93e88f65",
       "range": {
         "startLine": 5,
         "startChar": 13,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "604787e1_a3285a13",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "as before",
+      "parentUuid": "57c78400_13687912",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 19
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "28cb801b_866da1b8",
         "filename": "src/main/resources/static/js/analyticswizard.js",
         "patchSetId": 1
@@ -91,6 +163,30 @@
       "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef5ec645_1fdef321",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "28cb801b_866da1b8",
+      "range": {
+        "startLine": 23,
+        "startChar": 18,
+        "endLine": 23,
+        "endChar": 64
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "83d72741_c89e9029",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "93de72da_418a0b1c",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 4
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d2fc996a_1396ed7e",
         "filename": "src/main/resources/static/js/analyticswizard.js",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98f47646_c3a939f0",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-04T00:22:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d2fc996a_1396ed7e",
+      "range": {
+        "startLine": 52,
+        "startChar": 5,
+        "endLine": 52,
+        "endChar": 56
+      },
+      "revId": "2e8749ca931c64515663e65e88c998e9f343db96",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
