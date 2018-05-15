@@ -34,9 +34,19 @@ case class AnalyticDashboardSetup(name: String, config: Option[String] = None)(
     s"""
        |version: '3'
        |services:
+       |  dashboard-importer:
+       |    image: gerritforge/analytics-dashboard-importer:latest
+       |    networks:
+       |      - ek
+       |    links:
+       |      - elasticsearch
+       |      - kibana
+       |
        |  kibana:
        |    image: gerritforge/analytics-kibana:latest
        |    container_name: "kibana-for-${name}-project"
+       |    networks:
+       |      - ek
        |    environment:
        |      SERVER_BASEPATH: "/kibana"
        |    depends_on:
@@ -44,11 +54,14 @@ case class AnalyticDashboardSetup(name: String, config: Option[String] = None)(
        |  elasticsearch:
        |    image: gerritforge/analytics-elasticsearch:latest
        |    container_name: "es-for-${name}-project"
+       |    networks:
+       |      - ek
        |    environment:
        |      - ES_JAVA_OPTS=-Xmx4g -Xms4g
        |      - http.host=0.0.0.0
-       |    volumes:
-       |      - es-indexes:/usr/share/elasticsearch/data
+       |networks:
+       |  ek:
+       |    driver: bridge
      """.stripMargin
   }
 
