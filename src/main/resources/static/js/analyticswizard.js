@@ -31,6 +31,32 @@ function submitDetailsForm() {
     });
 }
 
+var handle201Status = function(data, textStatus, jqXHR) {
+    console.log("Something Happened!")
+};
+
+function dashboardService(command) {
+    var projectName = $("#input-project-name").val();
+    $.ajax({
+      type : "POST",
+      url : `/a/projects/${projectName}/analytics-wizard~server`,
+      dataType: 'application/json',
+      // Initially project-dashboard is a 1 to 1 relationship
+      data: "{'action': '" + command + "'}",
+      contentType:"application/json; charset=utf-8",
+      // Need to catch the status code since Gerrit doesn't return
+      // a well formed JSON, hence Ajax treats it as an error
+      statusCode: {
+        201: handle201Status
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        if(jqXHR.status != 201) {
+          handleError()
+        }
+      }
+    });
+}
+
 function showConfigDetails() {
     var projectName = $("#input-project-name").val();
     $.ajax({
