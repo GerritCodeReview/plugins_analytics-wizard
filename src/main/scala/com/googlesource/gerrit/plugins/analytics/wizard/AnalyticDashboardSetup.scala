@@ -61,6 +61,10 @@ case class AnalyticDashboardSetup(name: String, dockerComposeYamlPath: Path)(
        |    environment:
        |      - ES_JAVA_OPTS=-Xmx4g -Xms4g
        |      - http.host=0.0.0.0
+       |      - http.publish_host=127.0.0.1
+       |    ports:
+       |      - "9200:9200"
+       |      - "9300:9300"
        |
        |networks:
        |  ek:
