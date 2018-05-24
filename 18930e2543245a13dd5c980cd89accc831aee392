@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "592bb8ee_ee4ff663",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "URL-Encode",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 6
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c386cda8_65c69574",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "allow Gerrit REST-API to correctly find the resource.",
+      "range": {
+        "startLine": 9,
+        "startChar": 35,
+        "endLine": 9,
+        "endChar": 57
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d304d09_bad430d1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "Do we want to mention as well that even Docker compose doesn\u0027t like \u0027/\u0027 in container names. So we need to replace it with something else.",
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59a02d5e_9a4cc227",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticDashboardSetup.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "This is to avoid conflicts right?\nA project named \u0027foo/bar\u0027 would be encoded as \u0027foo-bar\u0027 and thus would be potentially in conflict with another \u0027foo-bar\u0027 project right?\n\nWhy not then just use System.currentTimeMillis?",
+      "range": {
+        "startLine": 35,
+        "startChar": 32,
+        "endLine": 35,
+        "endChar": 61
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6460b5c9_7bde9166",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "This should throw UnsupportedEncodingException right?",
+      "range": {
+        "startLine": 53,
+        "startChar": 33,
+        "endLine": 53,
+        "endChar": 39
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8369678c_b4f6fc22",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-24T07:38:22Z",
+      "side": 1,
+      "message": "As this is already the 2nd time you use it in the same class: why not making a urlEncode() method that just swallows the UnsupportedEncodingException?",
+      "range": {
+        "startLine": 69,
+        "startChar": 22,
+        "endLine": 69,
+        "endChar": 61
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
