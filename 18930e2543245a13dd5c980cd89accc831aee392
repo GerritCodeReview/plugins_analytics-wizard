@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e0d48992_635c369f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "592bb8ee_ee4ff663",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 6
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c386cda8_65c69574",
         "filename": "/COMMIT_MSG",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "04922816_6f1fd232",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c386cda8_65c69574",
+      "range": {
+        "startLine": 9,
+        "startChar": 35,
+        "endLine": 9,
+        "endChar": 57
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5d304d09_bad430d1",
         "filename": "/COMMIT_MSG",
         "patchSetId": 1
@@ -62,6 +110,24 @@
       "revId": "18930e2543245a13dd5c980cd89accc831aee392",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8560ce12_c6bd8950",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d304d09_bad430d1",
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "2f00a7f3_9227972e",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticDashboardSetup.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59a02d5e_9a4cc227",
+      "range": {
+        "startLine": 35,
+        "startChar": 32,
+        "endLine": 35,
+        "endChar": 61
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6460b5c9_7bde9166",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 1
@@ -111,6 +201,30 @@
     },
     {
       "key": {
+        "uuid": "9a6fddfc_078891eb",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6460b5c9_7bde9166",
+      "range": {
+        "startLine": 53,
+        "startChar": 33,
+        "endLine": 53,
+        "endChar": 39
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8369678c_b4f6fc22",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 1
@@ -131,6 +245,30 @@
       "revId": "18930e2543245a13dd5c980cd89accc831aee392",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2470ea2c_e66710c8",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-05-24T08:21:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8369678c_b4f6fc22",
+      "range": {
+        "startLine": 69,
+        "startChar": 22,
+        "endLine": 69,
+        "endChar": 61
+      },
+      "revId": "18930e2543245a13dd5c980cd89accc831aee392",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
