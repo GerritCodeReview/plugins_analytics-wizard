@@ -13,9 +13,9 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.analytics.wizard
 
-import java.io.PrintWriter
-import java.nio.charset.{Charset, StandardCharsets}
+import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Path}
+import java.time.Instant
 
 trait ConfigWriter {
   def write(outputPath: Path, out: String)
@@ -30,7 +30,10 @@ class ConfigWriterImpl extends ConfigWriter {
 case class AnalyticDashboardSetup(name: String, dockerComposeYamlPath: Path)(
     implicit val writer: ConfigWriter) {
 
-  private val dockerComposeTemplate = { (name: String) =>
+  // Docker doesn't like container names with /
+  private val sanitisedName =
+    s"${name.replace("/", "-")}-${Instant.now.getEpochSecond}"
+  private val dockerComposeTemplate = {
     s"""
        |version: '3'
        |services:
@@ -45,7 +48,7 @@ case class AnalyticDashboardSetup(name: String, dockerComposeYamlPath: Path)(
        |
        |  kibana:
        |    image: gerritforge/analytics-kibana:latest
-       |    container_name: "kibana-for-${name}-project"
+       |    container_name: "kibana-for-${sanitisedName}-project"
        |    networks:
        |      - ek
        |    depends_on:
@@ -55,7 +58,7 @@ case class AnalyticDashboardSetup(name: String, dockerComposeYamlPath: Path)(
        |
        |  elasticsearch:
        |    image: gerritforge/analytics-elasticsearch:latest
-       |    container_name: "es-for-${name}-project"
+       |    container_name: "es-for-${sanitisedName}-project"
        |    networks:
        |      - ek
        |    environment:
@@ -69,7 +72,7 @@ case class AnalyticDashboardSetup(name: String, dockerComposeYamlPath: Path)(
   }
 
   def createDashboardSetupFile(): Unit = {
-    writer.write(dockerComposeYamlPath, dockerComposeTemplate(name))
+    writer.write(dockerComposeYamlPath, dockerComposeTemplate)
   }
 
 }

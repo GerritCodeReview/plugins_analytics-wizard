@@ -13,6 +13,7 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.analytics.wizard
 
+import java.net.URLEncoder
 import java.nio.charset.StandardCharsets.UTF_8
 import java.nio.file.Path
 
@@ -28,9 +29,8 @@ import com.google.inject.Inject
 import AnalyticDashboardSetup.writer
 import com.google.gerrit.extensions.annotations.PluginData
 
-import scala.io.Source
-
-class GetAnalyticsStack @Inject()(@PluginData val dataPath: Path) extends RestReadView[ProjectResource] {
+class GetAnalyticsStack @Inject()(@PluginData val dataPath: Path)
+    extends RestReadView[ProjectResource] {
   override def apply(
       resource: ProjectResource): Response[AnalyticDashboardSetup] = {
 
@@ -50,8 +50,12 @@ class PutAnalyticsStack @Inject()(@PluginData val dataPath: Path)
                      input: Input): Response[String] = {
 
     val projectName = resource.getControl.getProject.getName
-    AnalyticDashboardSetup(projectName, dataPath.resolve(s"docker-compose.${projectName}.yaml")).createDashboardSetupFile()
-    Response.created(s"Dashboard configuration created for $projectName!")
+    val encodedName = URLEncoder.encode(projectName, "UTF-8")
+    AnalyticDashboardSetup(
+      projectName,
+      dataPath.resolve(s"docker-compose.${encodedName}.yaml"))
+      .createDashboardSetupFile()
+    Response.created(s"Dashboard configuration created for $encodedName!")
   }
 }
 
@@ -62,10 +66,11 @@ class PostAnalyticsStack @Inject()(@PluginData val dataPath: Path)
                      input: DockerComposeCommand): Response[String] = {
 
     val projectName = resource.getControl.getProject.getName
+    val encodedName = URLEncoder.encode(projectName, "UTF-8")
     val pb = new ProcessBuilder(
       "docker-compose",
       "-f",
-      s"${dataPath.toFile.getAbsolutePath}/docker-compose.${projectName}.yaml",
+      s"${dataPath.toFile.getAbsolutePath}/docker-compose.${encodedName}.yaml",
       input.action.toLowerCase)
     pb.redirectErrorStream(true)
 
