@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2e568e_0dccc152",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-25T06:53:42Z",
+      "side": 1,
+      "message": "This is way too complicated, see below a simpler way to manage the UnsupportedEncodingException",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 1
+      },
+      "revId": "2f9cd1b99e016b9ffbf269d4ea40694361ed4335",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a7d9a2ef_6c6b58ac",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-05-25T06:53:42Z",
+      "side": 1,
+      "message": "UTF-8 will *always* be resolved, otherwise, Gerrit wouldn\u0027t work at all.\nJust to try/catch and swallow the exception.\n\n  try {\n     URLEncoder.encode(name, \"UTF-8\")\n  } catch {\n     case e: Throwable \u003d\u003e throw new RuntimeException(e)\n  }",
+      "range": {
+        "startLine": 106,
+        "startChar": 3,
+        "endLine": 106,
+        "endChar": 53
+      },
+      "revId": "2f9cd1b99e016b9ffbf269d4ea40694361ed4335",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
