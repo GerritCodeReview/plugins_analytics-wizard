@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "603d63b1_3b0a826b",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2018-10-10T18:22:00Z",
+      "side": 1,
+      "message": "No EOL at the end of file",
+      "revId": "50f87ba7ac3ef395ba00de3dac887226a531885e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
