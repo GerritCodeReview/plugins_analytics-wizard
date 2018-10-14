@@ -22,6 +22,30 @@
       "revId": "f6eba3bdd823d802c89d5d169728c84b51da113d",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb5d64c9_357b6658",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticDashboardSetup.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-14T09:33:44Z",
+      "side": 1,
+      "message": "Setting http.publish_host to 127.0.0.1 works when you want to connect to ES from your host, but it doesn\u0027t work when you want to connect to ES from another docker container (it will timeout trying to connect to 127.0.0.1:9200).\n\nSetting publish.host to _site_ causes ES to advertise nodes using the site-local address (i.e. 192.168.x.x), which then can be reached when linking the two containers.\n\nMore info can be found here: https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html#network-interface-values",
+      "parentUuid": "55c87de9_6912c47c",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 27
+      },
+      "revId": "f6eba3bdd823d802c89d5d169728c84b51da113d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
