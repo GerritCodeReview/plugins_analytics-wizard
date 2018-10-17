@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "cd19a95f_4d0acccb",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T14:00:53Z",
+      "side": 1,
+      "message": "I think we can deserialize directly as DockerInspectResponse, if we tweak the inspect command to get directly the .[0].State",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ace7543e_4e7d1c5b",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T14:00:53Z",
+      "side": 1,
+      "message": "if we run this:\n\ndocker inspect containerName  --format \u0027{{json ((index .) 0).State}}\u0027\n\nWe can get directly to the first element\u0027s State field",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0612eddd_6bc44618",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 1
@@ -19,6 +53,40 @@
         "endLine": 119,
         "endChar": 39
       },
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bcdf7483_a95bea7c",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/DockerInspectResponse.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T14:00:53Z",
+      "side": 1,
+      "message": "Perhaps we could test that the inspect output can be deserialized to this object?",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "22fab88e_1e43d772",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/DockerInspectResponse.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T14:00:53Z",
+      "side": 1,
+      "message": "We don\u0027t need this this wrapper object if we can get directly to the State object",
       "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
