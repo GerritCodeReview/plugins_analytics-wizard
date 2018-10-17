@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9193e525_a1e989f2",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T16:48:42Z",
+      "side": 1,
+      "message": "perhaps this dockerClient should/could be passed as dependency?\nso that if ever test this method, say, on jenkins this doesn\u0027t fail?",
+      "revId": "0b542d2d554f1a67caed8710b154f1ae8c2ba86b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00a032ac_62f731f0",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-17T16:48:42Z",
+      "side": 1,
+      "message": "nit: you could match on containerInfo.state to avoid some repetition",
+      "revId": "0b542d2d554f1a67caed8710b154f1ae8c2ba86b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
