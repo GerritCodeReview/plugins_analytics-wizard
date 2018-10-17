@@ -17,6 +17,9 @@ import java.net.URLEncoder
 import java.nio.charset.StandardCharsets.UTF_8
 import java.nio.file.Path
 
+import io.circe.generic.auto._
+import io.circe.syntax._
+import io.circe.parser._
 import com.google.common.io.ByteStreams
 import com.google.gerrit.extensions.annotations.PluginData
 import com.google.gerrit.extensions.restapi.{
@@ -78,7 +81,54 @@ class PostAnalyticsStack @Inject()(@PluginData val dataPath: Path)
         throw new RestApiException(
           s"Failed with exit code: ${ps.exitValue} - $output")
     }
+  }
+}
 
+class GetAnalyticsStackStatus @Inject()(@PluginData val dataPath: Path)
+    extends RestReadView[ProjectResource] {
+  override def apply(resource: ProjectResource): Response[String] = {
+    val rawOutput: String = runDockerInspect
+
+    parse(rawOutput) match {
+      case Left(e) => throw new RestApiException(s"Parsing failure: $e")
+      case Right(json) => {
+        val result = json.as[List[DockerInspectResponse]]
+
+        result match {
+          case Left(e) => throw new RestApiException(s"Decoding failure: $e")
+          case Right(value) => {
+            responseFromDockerInspect(value)
+          }
+        }
+      }
+    }
+  }
+
+  private def runDockerInspect = {
+    val containerName = "analytics-wizard_spark-gerrit-analytics-etl_1"
+
+    val pb = new ProcessBuilder("docker", "inspect", containerName)
+
+    val ps: Process = pb.start
+    ps.getOutputStream.close
+    val rawOutput =
+      new String(ByteStreams.toByteArray(ps.getInputStream), UTF_8)
+    rawOutput
+  }
+
+  private def responseFromDockerInspect(value: List[DockerInspectResponse]) = {
+    value match {
+      case _ if value.isEmpty =>
+        throw new RestApiException(s"Cannot find docker container")
+      case _ if value.head.State.ExitCode != 0 =>
+        throw new RestApiException(s"Data import failed")
+      case _ if value.head.State.Status == "exited" =>
+        //Spark ETL job exited successfully
+        Response.withStatusCode(204, "finished")
+      case _ if value.head.State.Status == "running" =>
+        //Spark ETL job is still running
+        Response.withStatusCode(202, "processing")
+    }
   }
 }
 

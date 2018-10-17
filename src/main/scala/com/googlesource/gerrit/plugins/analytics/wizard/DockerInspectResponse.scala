@@ -1,4 +1,4 @@
-// Copyright (C) 2018 The Android Open Source Project
+// Copyright (C) 2017 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,22 +13,18 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.analytics.wizard
 
-import com.google.gerrit.extensions.restapi.RestApiModule
-import com.google.gerrit.server.project.ProjectResource.PROJECT_KIND
-import com.google.inject.AbstractModule
+import io.circe.Decoder
+import io.circe.generic.auto._
+import io.circe.generic.semiauto.deriveDecoder
 
-class Module extends AbstractModule {
+case class DockerInspectStateResponse(Status: String, ExitCode: Int)
 
-  override protected def configure() {
-    install(new RestApiModule() {
-      override protected def configure() = {
+object DockerInspectStateResponse {
+  val stateDecoder: Decoder[DockerInspectStateResponse] = deriveDecoder
+}
 
-        put(PROJECT_KIND, "stack").to(classOf[PutAnalyticsStack])
+case class DockerInspectResponse(State: DockerInspectStateResponse)
 
-        post(PROJECT_KIND, "server").to(classOf[PostAnalyticsStack])
-
-        get(PROJECT_KIND, "status").to(classOf[GetAnalyticsStackStatus])
-      }
-    })
-  }
+object DockerInspectResponse {
+  val inspectDecoder: Decoder[DockerInspectResponse] = deriveDecoder
 }
