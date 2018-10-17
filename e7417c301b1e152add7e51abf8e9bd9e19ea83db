@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1cae5534_04a81c9c",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-17T15:36:53Z",
+      "side": 1,
+      "message": "I have used a Java Docker client in the last patch set, hence this comment is no more pertinent.",
+      "parentUuid": "cd19a95f_4d0acccb",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ace7543e_4e7d1c5b",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "645a9e6d_c8ce354c",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-17T15:36:53Z",
+      "side": 1,
+      "message": "I have used a Java Docker client in the last patch set, hence this comment is no more pertinent.",
+      "parentUuid": "ace7543e_4e7d1c5b",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -76,6 +112,24 @@
     },
     {
       "key": {
+        "uuid": "b2ee4323_40fae3e2",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/DockerInspectResponse.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-17T15:36:53Z",
+      "side": 1,
+      "message": "No more needed.",
+      "parentUuid": "bcdf7483_a95bea7c",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "22fab88e_1e43d772",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/DockerInspectResponse.scala",
         "patchSetId": 1
@@ -90,6 +144,24 @@
       "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "732ce8dc_e05eaf8a",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/DockerInspectResponse.scala",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-17T15:36:53Z",
+      "side": 1,
+      "message": "No more needed.",
+      "parentUuid": "22fab88e_1e43d772",
+      "revId": "e7417c301b1e152add7e51abf8e9bd9e19ea83db",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
