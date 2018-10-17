@@ -28,6 +28,8 @@ import com.google.gerrit.extensions.restapi.{
 import com.google.gerrit.server.project.ProjectResource
 import com.google.inject.Inject
 import com.googlesource.gerrit.plugins.analytics.wizard.AnalyticDashboardSetup.writer
+import com.spotify.docker.client.DefaultDockerClient
+import com.spotify.docker.client.messages.ContainerInfo
 
 class Input(var dashboardName: String)
 
@@ -78,7 +80,29 @@ class PostAnalyticsStack @Inject()(@PluginData val dataPath: Path)
         throw new RestApiException(
           s"Failed with exit code: ${ps.exitValue} - $output")
     }
+  }
+}
 
+class GetAnalyticsStackStatus @Inject()(@PluginData val dataPath: Path)
+    extends RestReadView[ProjectResource] {
+  override def apply(resource: ProjectResource): Response[String] = {
+    val containerName = "analytics-wizard_spark-gerrit-analytics-etl_1"
+    val docker = DefaultDockerClient.fromEnv.build
+    responseFromContainerInfo(docker.inspectContainer(containerName))
+  }
+
+  private def responseFromContainerInfo(containerInfo: ContainerInfo) = {
+    containerInfo match {
+      case _ if containerInfo.state.exitCode != 0 =>
+        throw new RestApiException(s"Data import failed")
+      case _ if containerInfo.state.running =>
+        //Spark ETL job is still running
+        Response.withStatusCode(202, "processing")
+      case _ if containerInfo.state.status == "exited" =>
+        //Spark ETL job exited successfully
+        Response.withStatusCode(204, "finished")
+      case _ => throw new RestApiException(s"Case not handled")
+    }
   }
 }
 
