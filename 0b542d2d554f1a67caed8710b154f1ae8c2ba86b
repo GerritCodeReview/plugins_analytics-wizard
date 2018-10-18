@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "0d7a3294_29f74ecc",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-18T09:50:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9193e525_a1e989f2",
+      "revId": "0b542d2d554f1a67caed8710b154f1ae8c2ba86b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "00a032ac_62f731f0",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 2
@@ -33,6 +51,24 @@
       "revId": "0b542d2d554f1a67caed8710b154f1ae8c2ba86b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3873a1d6_4b5f3994",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-18T09:50:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00a032ac_62f731f0",
+      "revId": "0b542d2d554f1a67caed8710b154f1ae8c2ba86b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
