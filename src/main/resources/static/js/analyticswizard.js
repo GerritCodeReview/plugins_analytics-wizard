@@ -12,16 +12,38 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var handle201 = function(data, textStatus, jqXHR) {
-    $("#config-error-alert").hide();
-    $("#config-created-alert").show();
-};
+function showSuccessWithText(text) {
+    $("#error-alert").hide();
+    $("#success-alert").html(text).show();
+}
 
-var handleError = function(data, textStatus, jqXHR) {
-  $("#config-created-alert").hide();
-  $("#config-error-alert").show();
-};
+function showFailureWithText(text) {
+    $("#success-alert").hide();
+    $("#error-alert").html(text).show();
+}
 
+function hideAllAlerts() {
+    $("#success-alert").hide();
+    $("#error-alert").hide();
+}
+
+function waitForImport() {
+  hideAllAlerts();
+  waitingDialog.show('Importing analytics data...');
+  pollStatusEndpoint();
+}
+
+function pollStatusEndpoint() {
+    console.log("Checking status in 5000...")
+    setTimeout(function () { checkStatusRequest()}, 5000);
+}
+
+function wizardGoToDashboard() {
+    waitingDialog.hide();
+    var redirectLocation = location.protocol + "//" + location.hostname + ":5601/app/kibana#/dashboards";
+    console.log("Redirecting to kibana at: " + redirectLocation);
+    window.location.replace(redirectLocation);
+}
 
 function submitDetailsForm() {
     var projectName = encodeURIComponent($("#input-project-name").val());
@@ -35,26 +57,19 @@ function submitDetailsForm() {
       // Need to catch the status code since Gerrit doesn't return
       // a well formed JSON, hence Ajax treats it as an error
       statusCode: {
-        201: handle201
+        201: showSuccessWithText("Configuration created successfully")
       },
       error: function(jqXHR, textStatus, errorThrown) {
         if(jqXHR.status != 201) {
-          handleError()
+          showFailureWithText("Error creating configuration: " + errorThrown)
         }
       }
     });
 }
 
-var handle201Status = function(command) {
-  $("#up-error-alert").hide();
-  $("#down-error-alert").hide();
-  $("#up-ok-alert").hide();
-  $("#down-ok-alert").hide();
-  $("#" + command + "-ok-alert").show();
-};
-
 function dashboardService(command) {
     var projectName = encodeURIComponent($("#input-project-name").val());
+    hideAllAlerts();
     $.ajax({
       type : "POST",
       url : `/a/projects/${projectName}/analytics-wizard~server`,
@@ -65,11 +80,31 @@ function dashboardService(command) {
       // Need to catch the status code since Gerrit doesn't return
       // a well formed JSON, hence Ajax treats it as an error
       statusCode: {
-        201: handle201Status(command)
+        201: waitForImport
       },
       error: function(jqXHR, textStatus, errorThrown) {
         if(jqXHR.status != 201) {
-          handleError()
+          showFailureWithText("Error starting your dashboard: " + errorThrown)
+        }
+      }
+    });
+}
+
+function checkStatusRequest() {
+    var projectName = encodeURIComponent($("#input-project-name").val());
+    $.ajax({
+      type : "GET",
+      url : `/a/projects/${projectName}/analytics-wizard~status`,
+      dataType: 'application/json',
+      contentType:"application/json; charset=utf-8",
+      statusCode: {
+        202: pollStatusEndpoint,
+        204: wizardGoToDashboard
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        if(jqXHR.status != 202 && jqXHR.status != 204) {
+          showFailureWithText("Cannot start your dashboard: " + errorThrown);
+          waitingDialog.hide();
         }
       }
     });
