@@ -16,6 +16,7 @@ lazy val root = (project in file("."))
       "com.google.inject" % "guice"             % "3.0" % Provided,
       "com.google.gerrit" % "gerrit-plugin-api" % gerritApiVersion % Provided withSources (),
       "com.spotify"       % "docker-client"     % "8.14.1",
+      "com.beachape"      %% "enumeratum"       % "1.5.13",
       "org.scalatest"     %% "scalatest"        % "3.0.4" % Test,
       "net.codingwell"    %% "scala-guice"      % "4.1.0" % Test
     ),
