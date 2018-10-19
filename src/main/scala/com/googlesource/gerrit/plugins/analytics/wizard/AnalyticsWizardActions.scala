@@ -35,8 +35,9 @@ import com.spotify.docker.client.{DefaultDockerClient, DockerClient}
 import org.eclipse.jgit.lib.Config
 
 import scala.util.{Failure, Success}
+import com.googlesource.gerrit.plugins.analytics.wizard.model.ETLConfigRaw
 
-class Input(var dashboardName: String)
+class Input(val dashboardName: String, val etlConfig: ETLConfigRaw)
 
 class PutAnalyticsStack @Inject()(@PluginData val dataPath: Path,
                                   @GerritServerConfig gerritConfig: Config)
