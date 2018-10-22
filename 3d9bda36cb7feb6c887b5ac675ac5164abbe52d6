@@ -16,6 +16,24 @@
       "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4263ee57_2fadee30",
+        "filename": "src/test/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRawSpec.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T07:46:13Z",
+      "side": 1,
+      "message": "Added",
+      "parentUuid": "d4f87366_3c39e8c4",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
