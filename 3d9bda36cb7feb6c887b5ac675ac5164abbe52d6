@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "bf348bb0_973dcb5b",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "All the information needed to build/configure the dashboard are contained in the body payload. The project Rest API is the more meaningful to be extend by this plugin. Probably the plugin should alway access the \u0027all-projects\u0027 project.",
+      "parentUuid": "3409bb61_6d16b096",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f9871cf9_8741efbe",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
         "patchSetId": 5
@@ -30,6 +48,24 @@
       "writtenOn": "2018-10-22T11:37:46Z",
       "side": 1,
       "message": "This endpoint would also need to deal with the possible Left resulting from the validation",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28cb1c4c_f9f5e60e",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/AnalyticsWizardActions.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "I believe this is out of scope for this ticket. I\u0027d address in a separate change set. Is that ok?",
+      "parentUuid": "f9871cf9_8741efbe",
       "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
@@ -70,6 +106,24 @@
     },
     {
       "key": {
+        "uuid": "0d19c632_c97cd0d3",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43c0c2c5_e9d436db",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7cc57d60_81e3df9f",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
         "patchSetId": 5
@@ -84,6 +138,24 @@
       "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f41b7173_92fa5eed",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Moved away from it. We can\u0027t use smart constructors.",
+      "parentUuid": "7cc57d60_81e3df9f",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -104,6 +176,24 @@
     },
     {
       "key": {
+        "uuid": "a4f19c71_99c9ff13",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e96ca17_e4989abb",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6d949c87_53f25bf9",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
         "patchSetId": 5
@@ -121,6 +211,24 @@
     },
     {
       "key": {
+        "uuid": "929591ad_883c97f2",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6d949c87_53f25bf9",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "af5ced90_50a3626d",
         "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
         "patchSetId": 5
@@ -135,6 +243,24 @@
       "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80000810_61c0d5ed",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRaw.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af5ced90_50a3626d",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     },
     {
       "key": {
@@ -187,6 +313,24 @@
       "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2d945fd_752e7acc",
+        "filename": "src/test/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfigRawSpec.scala",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-22T13:44:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac5e29eb_3db13c4b",
+      "revId": "3d9bda36cb7feb6c887b5ac675ac5164abbe52d6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
