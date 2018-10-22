@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "db1c906f_91ae8c95",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfig.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-22T14:16:11Z",
+      "side": 1,
+      "message": "Out of these arguments I think only aggregate, since and url should be required, what do you think?",
+      "revId": "f3c8e2e18c8413ecb0ef45cfd08fefd393e6ab37",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb70d8f1_57eed728",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfig.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-22T14:16:11Z",
+      "side": 1,
+      "message": "What\u0027s URL?\nIs it the gerrit URL?\nShall we name it more explicitly?",
+      "revId": "f3c8e2e18c8413ecb0ef45cfd08fefd393e6ab37",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c46dfc26_8efca326",
+        "filename": "src/main/scala/com/googlesource/gerrit/plugins/analytics/wizard/model/ETLConfig.scala",
+        "patchSetId": 10
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-22T14:16:11Z",
+      "side": 1,
+      "message": "perhaps `IllegalArgumentException (which is also a throwable) might be more approapriate",
+      "revId": "f3c8e2e18c8413ecb0ef45cfd08fefd393e6ab37",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
