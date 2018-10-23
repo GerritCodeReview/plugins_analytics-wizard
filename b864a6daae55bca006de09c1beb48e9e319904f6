@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1521bc72_24074572",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-23T08:39:14Z",
+      "side": 1,
+      "message": "Good idea, I am going to tweak the text and the modal size",
+      "parentUuid": "ff131508_b9487d80",
+      "range": {
+        "startLine": 32,
+        "startChar": 22,
+        "endLine": 32,
+        "endChar": 49
+      },
+      "revId": "b864a6daae55bca006de09c1beb48e9e319904f6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1accfc12_a854d867",
         "filename": "src/main/resources/static/js/analyticswizard.js",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "a14b70af_00dbf550",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-23T08:39:14Z",
+      "side": 1,
+      "message": "I will remove this",
+      "parentUuid": "1accfc12_a854d867",
+      "range": {
+        "startLine": 37,
+        "startChar": 36,
+        "endLine": 37,
+        "endChar": 40
+      },
+      "revId": "b864a6daae55bca006de09c1beb48e9e319904f6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2f5c002c_5a78a47a",
         "filename": "src/main/resources/static/js/analyticswizard.js",
         "patchSetId": 1
@@ -68,6 +116,30 @@
       "revId": "b864a6daae55bca006de09c1beb48e9e319904f6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "808707f1_b23f4c23",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-23T08:39:14Z",
+      "side": 1,
+      "message": "yeah, unfortunately this is not possible out of the box",
+      "parentUuid": "2f5c002c_5a78a47a",
+      "range": {
+        "startLine": 43,
+        "startChar": 8,
+        "endLine": 43,
+        "endChar": 24
+      },
+      "revId": "b864a6daae55bca006de09c1beb48e9e319904f6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
