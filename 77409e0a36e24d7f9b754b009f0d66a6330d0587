@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92b65632_90b64716",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-23T16:20:10Z",
+      "side": 1,
+      "message": "is this a regexp? as `project*`?\ncan one pass something like `*project*`?\n\nPerhaps we can add some example of what is accepted\n\nAlso, would be nice to tell what (all?) fields are optional",
+      "revId": "77409e0a36e24d7f9b754b009f0d66a6330d0587",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2bf5f7e_4345feff",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1072905
+      },
+      "writtenOn": "2018-10-23T16:20:10Z",
+      "side": 1,
+      "message": "I am still not sure what an `event` is, perhaps someone else will be confused too. Can we make this a bit more clear?",
+      "revId": "77409e0a36e24d7f9b754b009f0d66a6330d0587",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
