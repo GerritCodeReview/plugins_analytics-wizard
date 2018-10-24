@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "65299a65_7ac130ae",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-24T11:58:53Z",
+      "side": 1,
+      "message": "I have added an example in the tooltip. Check if it is fine.\n\nI have added a cross/tick in the mandatory fields (dashboard name only)",
+      "parentUuid": "92b65632_90b64716",
+      "revId": "77409e0a36e24d7f9b754b009f0d66a6330d0587",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d2bf5f7e_4345feff",
         "filename": "src/main/resources/static/analytics-dashboard.html",
         "patchSetId": 5
@@ -33,6 +51,24 @@
       "revId": "77409e0a36e24d7f9b754b009f0d66a6330d0587",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55b35220_1e25faa0",
+        "filename": "src/main/resources/static/analytics-dashboard.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-10-24T11:58:53Z",
+      "side": 1,
+      "message": "This has been removed from the wizard.",
+      "parentUuid": "d2bf5f7e_4345feff",
+      "revId": "77409e0a36e24d7f9b754b009f0d66a6330d0587",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
