@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
 function showSuccessWithText(text) {
     $("#error-alert").hide();
     $("#success-alert").html(text).show();
