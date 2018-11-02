@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "81d44cb7_8d032a8c",
+        "filename": "src/main/resources/static/js/analyticswizard.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1054778
+      },
+      "writtenOn": "2018-11-02T14:50:40Z",
+      "side": 1,
+      "message": "Nice idea getting the since/until values!",
+      "range": {
+        "startLine": 82,
+        "startChar": 4,
+        "endLine": 86,
+        "endChar": 46
+      },
+      "revId": "b73badec08951163b0f24f4803213f3a6932b180",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
